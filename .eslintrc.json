@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "project": ["./tsconfig.json", "./tsconfig.vite.json"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "alias": [["@", "./src"]]
+    }
+  },
+  // "extends": ["alloy", "alloy/react", "alloy/typescript", "prettier"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true
+  },
+  "globals": {},
+  "rules": {
+    "prettier/prettier": "error",
+    "no-return-assign": "off"
+  },
+  "ignorePatterns": ["dist", "node_modules"]
+}
